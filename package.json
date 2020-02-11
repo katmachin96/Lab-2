@@ -1,0 +1,19 @@
+{
+  "name": "lab2",
+  "version": "1.0.0",
+  "description": "implementation of Brown CSCI1320 Lab2",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx serve ."
+  },
+  "keywords": [
+    "BrownCS132",
+    "Lab2",
+    "Triangle"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^6.8.0"
+  }
+}
