@@ -16,93 +16,108 @@
   <body>
     <div class="skip-links">
       <ul>
-      <li><a href="#nav"> Skip to navigation</a></li>
-            <li><a href="#main"> Skip to main content</a></li>
-            </ul>
-              </div>
+        <li><a href="#nav"> Skip to navigation</a></li>
+        <li><a href="#main"> Skip to main content</a></li>
+      </ul>
+   </div>
 
-              <nav role="navigation" id="nav">
-                    <div class="navbar">
-                      CS1320  </div>
+    
+   
+   <nav role="navigation" id="nav">
+      <div class="navbar">
+        CS1320 
+      </div>
 
-<main role="main" id="main">
-<div>
-<h1> Lab 2 </h1>
-
-</div>
-
-<div class="wrapper-container">
-            <div class="Intro-p">
-            <p>The following displays input fields for 3 side lengths for a triangle. Plug in your side lengths and find out about your triangle! </p>
-              </div>
-
-<!-- green triangle Box with traingle stats -->
-  <div class="Tri-results-box">
-
-    <div class="Tri-stats">
-
-          <div class="Tri-type">
-            <p> Triangle Type </p>
-          </div>
-  <!--triangle type Box where results should show up -->
-                  <div class="Tri-type-results">
-
-                  </div>
-          <div class="Perimeter">
-            <p> Perimeter </p>
-          </div>
-    <!--triangle perimeter Box where results should show up -->
-              <div class="Perimeter-results">
-
-              </div>
-          <div class="Area">
-            <p> Area </p>
-          </div>
-    <!--Area Box where results should show up -->
-                <div class="Area-results">
-
-                </div>
-          <div class="Angles">
-            <p> Angles </p>
-          </div>
-<!--triangle angles Box where results should show up -->
-                  <div class="Angles-results">
-
-                  </div>
-          </div>
+  <div>
+    <h1> Lab 2 </h1>
   </div>
-                  <!-- Input fields -->
-    <div class="triangle-input-fields">
-          <div class="side-p">
-            <p> Side lengths </p>
-          </div>
 
-        <div class="tri-length-A">
-          <div class="input-group mb-3">
-            <input type="text" class="form-control" placeholder="Plug in a number" aria-label="Recipient's username" aria-describedby="button-addon2">
+  <div class="wrapper-container" id="main">
+      <div class="Intro-p">
+        <p>The following displays input fields for 3 side lengths for a triangle. Plug in your side lengths and find out about your triangle! </p>
+      </div>
 
-          </div>
-          </div>
-
-          <div class="tri-length-B">
-            <div class="input-group mb-3">
-              <input type="text" class="form-control" placeholder="Plug in a number" aria-label="Recipient's username" aria-describedby="button-addon2">
-
-            </div>
-            </div>
-
-            <div class="tri-Length-C">
-              <div class="input-group mb-3">
-                <input type="text" class="form-control" placeholder="Plug in a number" aria-label="Recipient's username" aria-describedby="button-addon2">
-              </div>
-            </div>
-            
-      <!--SUBMIT BUTTON -->
-            <div class="input-group-append">
-              <button class="btn btn-outline-secondary" type="button" id="button-addon2">Submit</button>
-            </div>
+    <!-- green triangle Box with traingle stats -->
+    <div class="Tri-results-box">
+      <div class="Tri-stats">
+        <div class="Tri-type">
+          <p> Triangle Type - Sides</p>
         </div>
-</div>
+    <!--triangle type Box where results should show up -->
+      <div class="Tri-type-results">
+          <p id="triangle-type"></p>
+      </div>
+      <div class="Tri-type-2">
+        <p> Triangle Type - Angle </p>
+      </div>
+  <!--triangle type Box where results should show up -->
+    <div class="Tri-type-2-results">
+        <p id="triangle-type-2"></p>
+    </div>
+      <div class="Perimeter">
+        <p> Perimeter </p>
+      </div>
+    <!--triangle perimeter Box where results should show up -->
+      <div class="Perimeter-results">
+        <p id="perimeter"></p>
+      </div>
+        <div class="Area">
+          <p> Area </p>
+        </div>
+    <!--Area Box where results should show up -->
+        <div class="Area-results">
+          <p id="area"></p>
+        </div>
+        <div class="Angles">
+          <p> Angles </p>
+        </div>
+<!--triangle angles Box where results should show up -->
+        <div class="Angles-results">
+          <div class="Angles-results-sub">
+            <p id="angle-1"></p>
+          </div>
+          <div class="Angles-results-sub">
+            <p id="angle-2"></p>
+          </div>
+          <div class="Angles-results-sub">
+            <p id="angle-3"></p>
+          </div>
+        </div>
+     </div>
+    </div>
+    
+    <!-- Input fields -->
+    <div class="triangle-input-fields">
+      <div class="side-p">
+        <p> Side lengths </p>
+      </div>
+
+      <div class="tri-length-A">
+        <div class="input-group mb-3">
+            <input id="length1" type="text" class="form-control" placeholder="Plug in a number" aria-label="Recipient's username" aria-describedby="button-addon2">
+
+        </div>
+      </div>
+
+      <div class="tri-length-B">
+        <div class="input-group mb-3">
+          <input id="length2" type="text" class="form-control" placeholder="Plug in a number" aria-label="Recipient's username" aria-describedby="button-addon2">
+
+        </div>
+      </div>
+
+      <div class="tri-Length-C">
+        <div class="input-group mb-3">
+          <input id="length3" type="text" class="form-control" placeholder="Plug in a number" aria-label="Recipient's username" aria-describedby="button-addon2">
+        </div>
+      </div>
+              
+      <!--SUBMIT BUTTON -->
+        <div class="input-group-append" onClick="return calculate()">
+          <button class="btn btn-outline-secondary" type="button" id="button-addon2">Submit</button>
+        </div>
+      </div>
+    </div>
 
 
 
@@ -110,7 +125,7 @@
 
 
     <!-- Bootstrap link JS-->
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
