@@ -46,7 +46,7 @@ function checkValid(length1, length2, length3) {
 function triangleType(length1, length2, length3) {
     if (length1==length2 && length2==length3){
         return "Equilateral";
-    } if (length1 != length2 && length2 != length3 && length2 != length3) {
+    } if (length1 != length2 && length2 != length3 && length1 != length3) {
         return "Scalene";
     } else {
         return "Isosceles";
