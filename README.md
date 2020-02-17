@@ -11,3 +11,5 @@ We use error checking in JavaScript to check that the inputs are valid and then 
 a triangle. We factor out the code into different functions that calculate the various properties of the triangle. 
 
 We take into account accessibility requirements by scaling the text dynamically and use skip links and a logical page hierarchy. 
+
+Known Bugs: N/A
