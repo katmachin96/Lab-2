@@ -27,6 +27,7 @@ function calculate(){
             document.getElementById("triangle-type").innerHTML = "INVALID LENGTHS";
             document.getElementById("perimeter").innerHTML = "INVALID LENGTHS";
             document.getElementById("area").innerHTML = "INVALID LENGTHS";
+            document.getElementById("angle-1").innerHTML = "N/A";
             document.getElementById("angle-2").innerHTML = "N/A";
             document.getElementById("angle-3").innerHTML = "N/A";
             document.getElementById("triangle-type-2").innerHTML = "INVALID LENGTHS";
